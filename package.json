@@ -6,9 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ritikb0618/NODE-JS.git"
+  },
+  "keywords": [
+    "nothing"
+  ],
+  "author": "ritik Bansal",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ritikb0618/NODE-JS/issues"
+  },
+  "homepage": "https://github.com/ritikb0618/NODE-JS#readme",
   "dependencies": {
+    "chalk": "^5.3.0",
     "colors": "^1.4.0",
     "simple-node-logger": "^21.8.12"
   }
