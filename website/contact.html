@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Users/ritikbansal/Documents/GitHub/NODE-JS/website trying/style.css">
+    <script src="https://kit.fontawesome.com/186234307f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="contact-html">
+    <header class="header-about">
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">WT</h1>
+                <ul class="nav-items">
+                    <li class="nav-item pl"><a href="./index.html">HOME</a></li>
+                    <li class="nav-item pl"><a href="./about.html">ABOUT</a></li>
+                    <li class="nav-item "><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-form">
+        <div class="form-wrapper container">
+            <div class="company-address">
+                <i class="fa-solid fa-envelope"></i>
+                <h2>E-Mail</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <i class="fa-solid fa-phone"></i>
+                <h2>Mobile</h2>
+                <p>0987654321</p>
+                <i class="fa-solid fa-location-dot"></i>
+                <h2>Address</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <img src="./IMG/company-img.jpg" alt="">
+            </div>
+            <form action="" class="form">
+                <h2>Contact Us</h2>
+                <p>Let us know your questions, suggestions and concers by filling out the form below</p>
+                <label for="username">Username</label><br>
+                <input type="text"><br>
+                <label for="password">Password</label><br>
+                <input type="password"><br>
+                <label for="Mobile">Mobile</label><br>
+                <input type="text" name="Mobile" id=""><br>
+                <label for="text">Message</label><br>
+                <textarea name="message" id="query" cols="30" rows="10"></textarea>
+                <button type="submit" class="formbtn">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.12em;
+}
+
+/* ####################    utility classes   ################### */
+
+div.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mid{
+    font-weight: 500;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.lg-size{
+    font-size: 3.5rem;
+}
+
+.md-size{
+    font-size: 2.2rem;
+}
+
+.sm-size{
+    font-size: 1.8rem;
+}
+
+.txt-red{
+    color: #e63946;
+}
+
+.txt-black{
+    color: #333;
+}
+
+.txt-gray{
+    color: #555;
+}
+
+.txt-light{
+    color: #f4f4f4;
+}
+
+/* ######################## header elements ###################### */
+
+.header{
+    height: 98vh;
+    background-size: 100% 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) , url('../IMG/3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header .header-content p{
+    font-size: 1.5rem;
+    padding-bottom: 1.5em;
+}
+
+.header .header-content h1{
+    padding-bottom: 0.4em;
+}
+
+.header-content .btn{
+    background-color: #f4f4f4;
+    margin-top: 1em;
+    padding: 1rem 1.5rem;
+    border-radius: 200em;
+    display: inline-block;
+}
+
+.header .logo, .header .navbar a{
+    color: white;
+}
+
+.header .logo{
+    font-size: 3.5rem;
+    font-weight: 500;
+    float: left;
+    padding-top: 3rem;
+}
+
+.header .navbar .nav-items{
+    float: right;
+    display: inline-block;
+}
+
+.header .navbar .nav-item{
+    display: inline-block;
+    padding-top: 3.8rem;
+    margin-left: 2rem;
+    padding-bottom: 0.3rem;
+}
+
+.index .navbar .container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header-about .logo{
+    padding-top: 2rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    float: left;
+    color: #fff;
+}
+
+.header-about .navbar .nav-items{
+    padding-top: 3rem;
+    float: right;
+}
+
+.header-about .navbar .nav-item{
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.header-about nav.navbar{
+    padding-bottom: 8rem;
+    background-color: #263238;
+}
+
+.header-about .navbar .nav-item:hover{
+    border-bottom:2px solid #f4f4f4;
+}
+
+.header .navbar .nav-item:hover{
+    border-bottom:2px solid #f4f4f4;
+}
+
+.header .header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ########################## section ######################### */
+
+section.showcase{
+    padding: 12rem 0;
+    background-color: #ddd;
+}
+
+.row{
+    height: 350px;
+    background-color: white;
+    box-shadow: 5px 5px 20px 0px #8f8f8f;
+}
+
+section.showcase .row1{
+    margin-bottom: 12rem;
+}
+
+section.showcase .row1 .img-box, section.showcase .row2 .txt-box{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+section.showcase .row2 .img-box, section.showcase .row1 .txt-box{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+section.showcase .txt-box{
+    padding: 5rem;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row .txt-box h2{
+    margin-bottom: 3rem;
+}
+
+.row .txt-box p{
+    margin-bottom: 3rem;
+}
+
+.row .txt-box a{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: 2px solid #e63946;
+    border-radius: 10rem;
+    color: #e63946;
+}
+
+.row .txt-box a:hover{
+    background-color: #ddd;
+}
+
+
+
+
+/* ######################### features ####################### */
+
+.features{
+    padding: 10rem 0;
+}
+
+.box-wrapper{
+    box-shadow: 5px 5px 20px 0px #555;
+}
+
+.box{
+    width: 33.333333333%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+    height: 22rem;
+}
+
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box-1, .box-3{
+    background-color: #263238;
+    color: #f4f4f4;
+}
+
+.box-2{
+    background: rgb(172,28,28);
+background: linear-gradient(90deg, rgba(172,28,28,1) 0%, rgba(203,68,68,1) 50%, rgba(185,57,57,1) 100%);
+color: #f4f4f4;
+}
+
+.box i{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+/* ######################### footer ######################## */
+
+footer.footer{
+    padding: 2rem;
+    background-color: #263238;
+    color: #ddd;
+    text-align: center;
+}
+
+.social-media-links{
+    padding-bottom: 1.5rem;
+}
+
+footer.footer .social-media-links i{
+    padding-left: 2rem;
+}
+
+/* ############################  about us  ######################### */
+
+.header-about .navbar .nav-items .nav-item a{
+    color: #9b9b9b;
+}
+
+.header-about .navbar .nav-items .nav-item a:hover{
+color: #fafafa;
+}
+
+.about-us h1{
+    font-size: 4rem;
+    color: #515151;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    border-bottom: 5px solid #e61e2e;
+}
+
+.about-us .intro{
+    padding: 5rem 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.about-us .float-left{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.about-us .float-right{
+    display: inline-block;
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+.about-us::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.about-us i{
+    padding: 2rem 2rem;
+    font-size: 1.6rem;
+    display: inline-block;
+    color: #e63946;
+    font-weight: 700;
+}
+
+.about-us p{
+    display: inline-block;
+    font-weight: 600;
+}
+
+/* #######################  count  ################## */
+.counts{
+    width: 80%;
+    margin: 0 auto;
+}
+.count-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.count-item h2{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #e61e2e;
+    padding: 0.6rem;
+    padding-top: 2rem;
+}
+
+.count-item p{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/* ######################  contact us ####################### */
+
+.contact-us h2{
+display: inline-block;
+padding-right: 15%;
+font-size: 3rem;
+color: #ffffff;
+}
+
+.contact-us .contact-link{
+display: inline-block;
+color: #ffffff;
+font-size: 2.5rem;
+border: 3px solid #ffffff;
+padding: 1rem 2rem;
+letter-spacing: 0.2em;
+}
+
+.contact-us{
+background-color: #de5863;
+padding: 2rem 5rem;
+max-height: 200px;
+box-shadow: 5px 10px 10px #959595;
+}
+
+.padding{
+margin: 5rem auto;
+    max-width: 1000px;
+}
+
+/* ##################  contact page ################# */
+
+body.contact-html{
+    background-color: #e8e8e8;
+}
+
+.company-address{
+    float: left;
+    width: 49%;
+    padding: 3rem 3rem;
+    background-color: #ffffff;
+    margin:5rem auto;
+    height: 102vh;
+}
+
+.company-address img{
+    width: 100%;
+    object-fit: cover;
+    min-width: 100%;
+    height: auto;
+
+}
+
+.company-address::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.company-address h2{
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.company-address p{
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.company-address i{
+    font-size: 2rem;
+    display: inline-block;
+    color: #c1323e;
+}
+
+form.form{
+    float: right;
+    width: 49%;
+    margin:5rem auto;
+    padding: 3rem;
+    background-color: #fff;
+    height:102vh;
+}
+
+form.form::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+form.form h2{
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    padding: 1rem;
+    display: inline-block;
+}
+
+form.form p{
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+}
+
+.form.form label{
+    display: inline-block;
+    padding:0.8rem 2rem;
+    font-size: 2rem;
+}
+
+.form.form input{
+    width: 90%;
+    height: 2.2rem;
+    font-size: 1.5rem;
+}
+
+.form.form textarea{
+    font-size: 1.5rem;
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+
+.form.form .formbtn{
+    font-size: 1.8rem;
+    width: 30%;
+    background-color: #bd4e57;
+    padding: 0.4rem;
+    color: #fff;
+    border-radius: 5px;
+    margin: 1.5rem 50%;
+    transform: translate(-50%,0);
+}
+
+@media(max-width:650px){
+    .container{
+        max-width: 90%;
+    }
+
+    .index .navbar .logo{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .index .navbar .nav-items{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .header-content h1{
+        display: none;
+    }
+
+    .header-content .btn{
+        padding: 1rem 1rem;
+        border-radius: 200px;
+    }
+
+    section.showcase .row .img-box{
+        float: none;
+        width: 100%;
+    }
+
+    section.showcase .row .txt-box{
+        float: none;
+        width: 100%;
+    }
+
+    section.showcase .row{
+        height: auto;
+    }
+
+    .features .box-wrapper .box{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</html>
