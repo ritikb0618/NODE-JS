@@ -8,7 +8,8 @@ app.get('/profile', (req, resp) => {
     const user = {
         name: "Ritik",
         email: "yoyo@gmail.com",
-        city: "rampura"
+        city: "rampura",
+        skills: ["python","java","cpp","node js"]
     };
     resp.render('profile', { user });
 });
